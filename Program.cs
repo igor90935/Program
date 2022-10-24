@@ -1,4 +1,110 @@
-﻿// Задача 19: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// Задача 2           
+
+	Console.WriteLine("Введи 2 числа и мы тебе скажем какое из них больше");
+	int a, b;
+	Console.WriteLine("Введи свое первое число - ");
+	a = Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine("Введи свое второе число - ");
+	b = Convert.ToInt32(Console.ReadLine());
+ 
+	bool Chto0 = a > b;
+	bool Chto1 = a == b;
+	bool Chto2 = a < b;
+ 
+	if (Chto0)
+	{
+	Console.WriteLine($"Число {a} больше чем {b}");
+	}
+	else if (Chto1)
+	{
+	Console.WriteLine($"Числа {a} и {b} равны");
+	}
+	else
+	{
+	Console.WriteLine($"Число {b} больше чем {a}");
+	}
+//
+
+// Задача 4
+
+        {
+        Console.WriteLine("Введи 3 числа и мы тебе скажем какое из них больше");
+        int a, b, c;
+        Console.WriteLine("Введи свое первое число - ");
+        a = Convert.ToInt32(Console.ReadLine());
+	Console.WriteLine("Введи свое второе число - ");
+        b = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введи свое третье число - ");
+        c = Convert.ToInt32(Console.ReadLine());
+        int max = a;
+
+        if (b > max)max=b;
+        if (c > max)max=c;
+
+        Console.WriteLine($"Максимальное число {max}");
+            
+        }
+//
+
+// Задача 6
+
+        {
+        Console.WriteLine((int.Parse(Console.ReadLine()) & 1) == 0? "Да": "Нет");
+        }
+//
+
+// Задача 8 
+    {
+    foreach (int i in Enumerable.Range(1, int.Parse(Console.ReadLine()) >> 1))
+    Console.WriteLine(i << 1);
+    }
+//﻿
+//Задача 10           
+
+
+Console.Clear();
+Console.WriteLine("Задача 10 ");
+Console.Write("Введи трёхзначное число: ");
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+string stringNumber = Convert.ToString(threeDigitNumber);
+Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
+//
+
+//Задача 13
+
+Console.WriteLine("Задача 13 ");
+
+Console.Write("Введи число: ");
+int anyNumber = Convert.ToInt32(Console.ReadLine());
+string anyNumberText = Convert.ToString(anyNumber);
+if (anyNumberText.Length > 2){
+  Console.WriteLine("третья цифра -> " + anyNumberText[2]);
+}
+else {
+  Console.WriteLine("-> третьей цифры нет");
+}
+//
+
+//Задача 15
+
+Console.WriteLine("Задача 15 ");
+
+Console.Write("Введи цифру, обозначающую день недели: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+
+void CheckingTheDayOfTheWeek (int dayNumber) 
+{
+  if (dayNumber == 6 || dayNumber == 7) 
+  {
+  Console.WriteLine("(этот день выходной) -> да");
+  }
+  else Console.WriteLine("(этот день не выходной) -> нет");
+}
+
+CheckingTheDayOfTheWeek(dayNumber);
+//
+
+// Задача 19: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
 // Console.WriteLine("Задача 19");
 // Console.Write("Введите число: ");
