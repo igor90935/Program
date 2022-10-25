@@ -333,7 +333,7 @@ int QuantityPositive(int[] array)
 {
     int quantity = 0;
     for (int i = 0; i<array.Length; i++ ){
-    if (array[i] % 2 == 1)
+    if (array[i] % 2 != 1)
     {
       quantity++;
     }
@@ -366,7 +366,7 @@ int RandomNumbers(int numberElements, int min, int max)
 
       Console.Write(randomNumbers[i] + " ");
 
-      if (i % 2 != 1)
+      if (i % 2 == 1)
       {
         sumElements = sumElements + randomNumbers[i];
       }
